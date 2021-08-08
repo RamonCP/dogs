@@ -22,7 +22,7 @@ export const dogsApi = createApi({
   endpoints: (builder) => ({
     fetchDogs: builder.query<Dog[], number>({
       query(page = 0) {
-        return `/breeds?limit=10&page=${page}&order=desc`
+        return `/breeds?limit=9&page=${page}`
       }
     })
   })
